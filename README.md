@@ -1,6 +1,6 @@
 **简体中文** | **[English](README-en.md)**
 
-使用OpenCV处理图像，NumPy加速的抖音验证码破解
+OpenCV + NumPy破解抖音验证码
 
 ## 实现步骤
 
