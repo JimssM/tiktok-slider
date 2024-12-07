@@ -1,16 +1,6 @@
 **[简体中文](README.md)** | **English**
 OpenCV + NumPy detect TikTok slider
 
-## All files
-
-func.py: Functional function
-
-main.py：Test app
-
-test_img：Test img
-
-detect_result.txt：Test result
-
 ## Steps
 
 Calculate the number of pixels meet the specified gray value conditions
