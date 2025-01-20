@@ -40,4 +40,3 @@ def identify_images_in_directory(directory):
 if __name__ == '__main__':
     # 识别指定目录下的图片
     identify_images_in_directory("test_img")
-    print(time.perf_counter())

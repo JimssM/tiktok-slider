@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: UTF-8 -*-
-import time
 
+import time
 import cv2
 import numpy as np
 
@@ -59,8 +59,8 @@ def _extract_region(image, top_left, size):
 # 计算目标区域的长度
 def identify_length(img_path):
     # 示例使用
-    top_left = (12, 90)  # 替换为你希望提取区域的左上角坐标
-    size = (76, 150)  # 替换为你希望提取区域的大小
+    top_left = (12, 90)  # 提取区域的左上角坐标
+    size = (76, 150)  # 提取区域的大小
     image = cv2.imread(img_path)
 
     length_pixel = 258  # 横向平移像素长度
@@ -71,7 +71,6 @@ def identify_length(img_path):
     length = 0
 
     for i in range(length_pixel):
-        # print(1)
         top_left_diff = (top_left[0] + i, top_left[1])
 
         # 提取指定区域
@@ -82,7 +81,6 @@ def identify_length(img_path):
             length = i
     if diff_count < 150:
         for i in range(length_pixel):
-            # print(1)
             top_left_diff = (top_left[0] + i, top_left[1])
 
             # 提取指定区域
