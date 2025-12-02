@@ -1,6 +1,6 @@
 **简体中文** | **[English](README-en.md)**
 
-OpenCV + NumPy破解抖音验证码
+OpenCV + NumPy检测抖音验证码
 
 ## 实现步骤
 
@@ -9,7 +9,6 @@ OpenCV + NumPy破解抖音验证码
 ```python
 ## ./func.py
 
-# 计算灰度差值
 def _count_gray_difference(image1, image2):
     # 转换为灰度图
     gray1 = cv2.cvtColor(image1, cv2.COLOR_BGR2GRAY)
@@ -37,7 +36,6 @@ def _count_gray_difference(image1, image2):
 ```python
 ## ./func.py
 
-# 计算颜色差值
 def _count_color_difference(image1, image2):
     # 提取蓝色通道（索引为0）
     blue1 = image1[:, :, 0].astype(np.int32)
